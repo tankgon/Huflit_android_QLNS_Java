@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/atc_TinTuc"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="Tin tức"></item>-->
+    <item
+        android:id="@+id/atc_ThongBao"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:title="Thông báo"></item>
+    <item
+        android:id="@+id/atc_PhongBan"
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:title="Phòng ban">
+    </item>
+    <item
+        android:id="@+id/atc_NhanVien"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="Nhân viên"/>
+</menu>

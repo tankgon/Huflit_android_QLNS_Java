@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="Signin_to_continue">Sign in to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Login">LOGIN</string>
+    <string name="Forgot_password">Forgot Password?</string>
+    <string name="or">or</string>
+    <string name="Social_media_login">Social Media Login</string>
+    <string name="Dont_have_an_account">Don\'t have an account?</string>
+    <string name="Signup">Sign up</string>
+
+    <string name="hi">Hi!</string>
+    <string name="Create_acccout">Create a new account</string>
+    <string name="username">Username</string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="Conform">Conform Password</string>
+    <string name="Already_have_an_account">Already have an account?</string>
+    <string name="Signin">Sign in</string>
+
+    <string name="Hello">Hello!</string>
+    <string name="des">Best place to write life stories and share your journey experiences</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_main_quan_ly_thu_vien">MainActivityQuanLyThuVien</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Library</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_Delete">Delete All</string>
+
+    <string name="menu_TrangChu">Trang chủ</string>
+    <string name="menu_GhiChu">Ghi chú</string>
+
+    <string name="menu_UngDung">Về ứng dụng</string>
+
+    <string name="menu_NguoiDung">Thiết lập thành viên</string>
+    <string name="menu_NhanVien">Nhân viên</string>
+    <string name="menu_ThongTinCaNhan">Thông tin cá nhân</string>
+    <string name="menu_ThemNhanVien">Thêm nhân viên</string>
+    <string name="menu_CaiDat">Cài đặt</string>
+
+    <string name="menu_DoiMatKhau">Đổi mật khẩu</string>
+    <string name="menu_DangXuat">Đăng xuất</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

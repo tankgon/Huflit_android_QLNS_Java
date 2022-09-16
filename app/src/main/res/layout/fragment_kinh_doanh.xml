@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhongBan.KinhDoanhFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ttPhongMarketing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNamePBMarketing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Phòng Kinh Doanh"
+            android:textColor="@color/blue_042CE3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgLinePB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNamePBMarketing"
+            app:srcCompat="@drawable/ic_baseline_remove_left_24" />
+
+        <TextView
+            android:id="@+id/txtNameTruongPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Trưởng phòng: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLinePB" />
+
+        <TextView
+            android:id="@+id/txtEmailTruongPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email: "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtNameTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/edtNameTPMarketing" />
+
+        <TextView
+            android:id="@+id/txtSDTTruongPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Số điện thoại: "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtEmailTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailTPMarketing" />
+
+        <TextView
+            android:id="@+id/txtSoLuongNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="14sp"
+            android:text="Số lượng NV: "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtSDTTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/edtSDTTPMarketing" />
+
+        <EditText
+            android:id="@+id/edtNameTPMarketing"
+            android:layout_width="220sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toEndOf="@+id/txtNameTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/imgLinePB"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtEmailTPMarketing"
+            android:layout_width="220sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/txtEmailTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/edtNameTPMarketing"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/edtSDTTPMarketing"
+            android:layout_width="220sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/txtSDTTruongPhong"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailTPMarketing"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtSoLuongNVPBMarketing"
+            android:layout_width="220sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/txtSoLuongNV"
+            app:layout_constraintTop_toBottomOf="@+id/edtSDTTPMarketing"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnUpdateMarketing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Cập nhật"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/edtSoLuongNVPBMarketing"
+            app:layout_constraintTop_toBottomOf="@+id/edtSoLuongNVPBMarketing" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttPhongMarketing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNVMarketing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_nhanvien" />
+    </ScrollView>
+
+</LinearLayout>

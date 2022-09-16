@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="618dp"
+                android:background="@color/mauXanh"
+                app:layout_constraintBottom_toTopOf="@+id/btnUpdateNhanVien"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Thông tin nhân viên"
+                app:titleTextColor="@color/white_EAF3FA">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <ImageView
+                android:id="@+id/img_AddAvata"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="55dp"
+                android:paddingTop="30sp"
+                android:paddingBottom="30sp"
+                android:src="@drawable/avatar"
+                app:layout_constraintBottom_toTopOf="@id/textViewHoTenNV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--<ImageView
+                android:id="@+id/iv_edit_image"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_user_image"
+                app:layout_constraintEnd_toEndOf="@+id/iv_user_image" />-->
+
+
+            <TextView
+                android:id="@+id/textViewHoTenNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="Họ và tên"
+                android:textColor="@color/blue_617AD2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_AddAvata" />
+
+            <EditText
+                android:id="@+id/edtHoTen"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nhập Họ và tên"
+                android:inputType="textCapSentences"
+                app:layout_constraintStart_toStartOf="@+id/textViewHoTenNV"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHoTenNV"
+                tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck" />
+
+            <TextView
+                android:id="@+id/textViewGioiTinhNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Giới tính"
+                android:textColor="@color/blue_617AD2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewHoTenNV"
+                app:layout_constraintTop_toBottomOf="@+id/edtHoTen" />
+
+            <EditText
+                android:id="@+id/edtAddGioiTinh"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nam or Nữ"
+                android:inputType="textCapSentences"
+                app:layout_constraintStart_toStartOf="@+id/textViewGioiTinhNV"
+                app:layout_constraintTop_toBottomOf="@+id/textViewGioiTinhNV"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewNgaySinhNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ngày Sinh"
+                android:textColor="@color/blue_617AD2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewGioiTinhNV"
+                app:layout_constraintTop_toBottomOf="@+id/edtAddGioiTinh" />
+
+            <EditText
+                android:id="@+id/edtNgaySinh"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nhập Ngày sinh"
+                android:inputType="textCapSentences"
+                app:layout_constraintStart_toStartOf="@+id/textViewNgaySinhNV"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNgaySinhNV"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:id="@+id/textViewEmailNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/blue_617AD2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewNgaySinhNV"
+                app:layout_constraintTop_toBottomOf="@+id/edtNgaySinh" />
+
+            <EditText
+                android:id="@+id/edtEmailNV"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nhập Email"
+                android:inputType="textCapSentences"
+                app:layout_constraintStart_toStartOf="@+id/textViewEmailNV"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEmailNV"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewSDTNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Số Điện thoại"
+                android:textColor="@color/blue_617AD2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewEmailNV"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmailNV" />
+
+            <EditText
+                android:id="@+id/edtSDT"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nhập Số điện thoại"
+                android:inputType="textCapSentences"
+                app:layout_constraintStart_toStartOf="@+id/textViewSDTNV"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSDTNV"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnUpdateNhanVien"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/blue_042CE3"
+                android:text="Update nhân viên"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtSDT" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarThongTinNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mauXanh"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="Thêm Nhân Viên"
+        app:titleTextColor="@color/white_EAF3FA">
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

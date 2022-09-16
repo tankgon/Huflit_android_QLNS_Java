@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/hi"
+        android:textColor="@color/blue_163297"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgBack"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack" />
+
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Create_acccout"
+        android:textColor="@color/blue_7B9CE9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtHi"
+        app:layout_constraintTop_toBottomOf="@+id/txtHi" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="750px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/blue_617AD2"
+        android:textColorHint="@color/blue_617AD2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtCreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreateAccount"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="750px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/blue_617AD2"
+        android:textColorHint="@color/blue_617AD2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtUsername"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="@string/Conform"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/blue_617AD2"
+        android:textColorHint="@color/blue_617AD2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtCfPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCfPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtCfPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/blue_617AD2"
+        android:textColorHint="@color/blue_617AD2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="700px"
+        android:layout_height="130px"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/blue_042CE3"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/SignUp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        android:id="@+id/txtAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Already_have_an_account"
+        android:textColor="@color/blue_7B9CE9"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Signin"
+        android:textColor="@color/blue_042CE3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAlreadyAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

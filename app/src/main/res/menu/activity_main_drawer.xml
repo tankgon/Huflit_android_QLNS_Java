@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_TrangChu"
+            android:icon="@drawable/home36"
+            android:title="@string/menu_TrangChu" />
+        <item
+            android:id="@+id/nav_NhanVien"
+            android:icon="@drawable/ic_outline_people_alt_24"
+            android:title="@string/menu_ThemNhanVien" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ThongTinCaNhan"
+            android:icon="@drawable/user36"
+            android:title="@string/menu_ThongTinCaNhan" />
+
+        <item
+            android:id="@+id/nav_ThemNhanVien"
+            android:icon="@drawable/male36"
+            android:title="@string/menu_ThemNhanVien" />
+        <item
+            android:id="@+id/nav_DangXuat"
+            android:icon="@drawable/down36"
+            android:title="@string/menu_DangXuat" />
+    </group>
+
+
+</menu>
+

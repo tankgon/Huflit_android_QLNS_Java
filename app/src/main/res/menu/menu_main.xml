@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_TrangChu"
+            android:icon="@drawable/home36"
+            android:title="@string/menu_TrangChu"
+            app:showAsAction="never"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ThongTinCaNhan"
+            android:icon="@drawable/user36"
+            android:title="@string/menu_ThongTinCaNhan"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/nav_NhanVien"
+            android:icon="@drawable/ic_outline_people_alt_24"
+            android:title="@string/menu_NhanVien"
+            app:showAsAction="never"/>
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_DoiMatKhau"
+            android:icon="@drawable/ic_outline_vpn_key_24"
+            android:title="@string/menu_DoiMatKhau"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/nav_DangXuat"
+            android:icon="@drawable/down36"
+            android:title="@string/menu_DangXuat"
+            app:showAsAction="never"/>
+    </group>
+</menu>
